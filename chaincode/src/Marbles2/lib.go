@@ -59,7 +59,7 @@ func get_owner(stub shim.ChaincodeStubInterface, id string) (Owner, error) {
 	if len(owner.Username) == 0 {                              //test if owner is actually here or just nil
 		return owner, errors.New("Owner does not exist - " + id + ", '" + owner.Username + "' '" + owner.Company + "'")
 	}
-	
+
 	return owner, nil
 }
 
