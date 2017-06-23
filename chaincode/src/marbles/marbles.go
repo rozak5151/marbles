@@ -42,6 +42,7 @@ type Marble struct {
 	Color      string        `json:"color"`
 	Size       int           `json:"size"`    //size in mm of marble
 	Owner      OwnerRelation `json:"owner"`
+
 }
 
 // ----- Owners ----- //
@@ -55,7 +56,8 @@ type Owner struct {
 type OwnerRelation struct {
 	Id         string `json:"id"`
 	Username   string `json:"username"`    //this is mostly cosmetic/handy, the real relation is by Id not Username
-	Company    string `json:"company"`     //this is mostly cosmetic/handy, the real relation is by Id not Company
+	Company    string `json:"company"`
+	email			 string `json:"email"`    //this is mostly cosmetic/handy, the real relation is by Id not Company
 }
 
 // ============================================================================================================================
