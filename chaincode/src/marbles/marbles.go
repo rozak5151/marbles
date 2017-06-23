@@ -56,7 +56,7 @@ type Owner struct {
 type OwnerRelation struct {
 	Id         string `json:"id"`
 	Username   string `json:"username"`    //this is mostly cosmetic/handy, the real relation is by Id not Username
-	Company    string `json:"company"`
+	Company    string `json:"company"`//this is mostly cosmetic/handy, the real relation is by Id not Company
 	email			 string `json:"email"`    //this is mostly cosmetic/handy, the real relation is by Id not Company
 }
 
